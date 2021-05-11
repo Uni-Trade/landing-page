@@ -1,0 +1,941 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Uni-Trade</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/timeline.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+<!-- ШАПКА -->
+
+<div class="modal fade" id="popup" tabindex="-1" aria-labelledby="popup" aria-hidden="true">
+	<div class="modal-dialog popup-body mx-xxl-auto mx-xl-auto mx-lg-auto mx-md-auto mx-sm-0 mx-0 mt-sm-0 mt-xxl-5 mt-xl-5 mt-lg-5 mt-md-5 mt-0 mb-0">
+		<div class="modal-content bg-transparent border-0">
+			<div class="d-flex align-items-center justify-content-center w-100 mb-4 d-flex h-100 flex-column">
+				<img class="ms-auto" style="cursor: pointer" src="svg/close-modal.svg" data-bs-dismiss="modal"
+					 aria-label="Close"/>
+				<span class="popup-header mt-2 mt-sm-2 mt-md-0">
+				While you were looking at the site
+			</span>
+				<div class="container">
+					<div class="row  mt-4">
+						<div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 d-flex align-items-center justify-content-center flex-column">
+						<span class="popup-first-line">
+							10:23
+						</span>
+							<span class="popup-second-line">
+							visit time
+						</span>
+						</div>
+						<div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 d-flex flex-column align-items-center justify-content-center">
+						<span class="popup-first-line">
+							$0
+						</span>
+							<span class="popup-second-line">
+							your earnings
+						</span>
+						</div>
+					</div>
+				</div>
+				<span class="popup-header mt-4">
+				over this time
+			</span>
+				<div class="container">
+					<div class="row mt-5 mb-5">
+						<div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 d-flex align-items-center justify-content-center flex-column">
+						<span class="popup-first-line">
+							6 553
+						</span>
+							<span class="popup-second-line">
+							Traders online
+						</span>
+						</div>
+						<div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 d-flex flex-column align-items-center justify-content-center">
+						<span class="popup-first-line">
+							$452 150
+						</span>
+							<span class="popup-second-line">
+							traders earned
+						</span>
+						</div>
+					</div>
+				</div>
+				<a href="https://app.uni-trade.pro">
+					<button class="popup-button hover-button">
+						Authorization
+					</button>
+				</a>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+
+<header>
+	<nav class="navbar p-0 navbar-container navbar-expand-lg navbar-light fixed-top">
+		<div class="container">
+			<a class="navbar-brand ps-xxl-2 ps-xl-2 ps-lg-2 ps-md-0 ps-sm-0 ps-0" href="#">
+				<img class="logo" src="svg/logo.svg"/>
+			</a>
+			<!-- Button trigger modal -->
+			<div class="d-xxl-none d-xl-none d-lg-none d-md-flex d-sm-flex d-flex align-items-center justify-content-center">
+				<button class="login-button me-3">
+					<a style="color: white" href="/">EN</a> &nbsp; / &nbsp; <a style="color: white"
+																					 href="ru.html">RU</a>
+				</button>
+				<a href="https://app.uni-trade.pro">
+					<button class="reg-button me-3 d-md-block d-sm-none d-none">
+						<span>Authorization</span>
+					</button>
+				</a>
+				<div class="dropdown">
+					<button class="toggle-button " data-bs-toggle="dropdown" aria-expanded="false">
+						<img src="svg/toggle-menu.svg"/>
+					</button>
+					<div class="dropdown-menu dropdown-container text-center p-4 dropdown-menu-end">
+						<a class=" nav-link-custom nav-link" href="#selling">Trade</a>
+						<a class="nav-link nav-link-custom" href="#about">About</a>
+						<a class="nav-link nav-link-custom" href="#for_clients">Customers</a>
+						<a href="index.html">
+							<button class="login-button me-auto ms-auto mt-4">
+								<a style="color: white" href="/">EN</a> &nbsp; / &nbsp; <a style="color: white"
+																								 href="ru.html">RU</a>
+							</button>
+						</a>
+						<a href="https://app.uni-trade.pro">
+							<button class="reg-button mt-4" data-bs-toggle="modal">
+								<span>Authorization</span>
+							</button>
+						</a>
+					</div>
+				</div>
+
+			</div>
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<ul class="navbar-nav me-auto ms-auto mb-2 mb-md-0">
+					<li class="nav-item">
+						<a class=" nav-link-custom nav-link" href="#selling">Trade</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link nav-link-custom" href="#about">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link nav-link-custom" href="#for_clients">Customers</a>
+					</li>
+				</ul>
+				<div class="d-flex justify-content-center align-items-center">
+					<button class="login-button me-3 ">
+						<a style="color: white" href="/">EN</a> &nbsp; / &nbsp; <a style="color: white"
+																						 href="ru.html">RU</a>
+					</button>
+					<a href="https://app.uni-trade.pro">
+						<button class="reg-button">
+							<span>Authorization</span>
+						</button>
+					</a>
+				</div>
+
+			</div>
+		</div>
+	</nav>
+</header>
+
+<!-- ПЕРВЫЙ БЛОК -->
+<main>
+	<!--	<div class="container-fluid ">-->
+	<div id="carouselExampleCaptions" class="carousel slide carousel-fade h-100 w-100" data-bs-ride="carousel">
+		<div class="carousel-inner carousel-inner-custom w-100">
+			<div class="carousel-item active h-100 w-100">
+				<img src="images/first-bg.png" class="d-block h-100 carousel-img" alt="...">
+				<div class="carousel-caption-position">
+					<div class="first__text-divider">
+
+					</div>
+					<p class="first__header mt-3">
+						Profitable investment
+					</p>
+					<p class="first__second-line">
+						With a reliable broker
+					</p>
+					<p class="first__third-paragraph">
+						We are confident that we have the best conditions suitable for experienced traders. Our platform
+						is <br/>
+						used by more than 10,000 people
+					</p>
+					<a href="https://app.uni-trade.pro">
+						<button class="first__button mt-3 hover-button">
+							Join now
+						</button>
+					</a>
+					<div class="carousel-line-position">
+						<a href="#carouselExampleCaptions" class="me-3" role="button" data-bs-slide="prev">
+							<img src="svg/slide-line.svg"/>
+						</a>
+						<span>
+								01/03
+							</span>
+						<a href="#carouselExampleCaptions" class="ms-3" role="button" data-bs-slide="next">
+							<img src="svg/slide-line.svg"/>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="carousel-item w-100" style="height: 101%">
+				<img src="images/first-2.png" class="d-block carousel-img h-100" alt="...">
+				<div class="carousel-caption-position">
+					<div class="first__text-divider">
+
+					</div>
+					<p class="first__header mt-3">
+						Get a lifetime <br/>
+						CASH BACK
+					</p>
+					<p class="first__second-line">
+						For trade turnover
+					</p>
+					<p class="first__third-paragraph">
+						Each UniTrade client automatically participates <br/>
+						in the "Cash back" and "Up to$ 10 to the account balance" programs"
+					</p>
+					<a href="https://app.uni-trade.pro">
+						<button class="first__button mt-3 hover-button">
+							Become a customer
+						</button>
+					</a>
+					<div class="carousel-line-position">
+						<a href="#carouselExampleCaptions" class="me-3" role="button" data-bs-slide="prev">
+							<img src="svg/slide-line.svg"/>
+						</a>
+						<span>
+								02/03
+							</span>
+						<a href="#carouselExampleCaptions" class="ms-3" role="button" data-bs-slide="next">
+							<img src="svg/slide-line.svg"/>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="carousel-item h-100 w-100">
+				<img src="images/first-3.png" class="d-block carousel-img h-100" alt="...">
+				<div class="carousel-caption-position">
+					<div class="first__text-divider">
+
+					</div>
+					<p class="first__header mt-3">
+						Unique access to trading <br/>
+						on cryptocurrency markets
+					</p>
+					<p class="first__second-line">
+						Trade cryptocurrency <br/>
+						on special terms and conditions
+					</p>
+					<div class="first__third-paragraph d-flex flex-column">
+						<div class="d-flex align-items-center justify-content-start">
+							<img class="fifth__ul-ellipse" src="svg/ul-ellipse.svg" alt="">
+							<span class="fifth__ul-text">The most liquid instruments</span>
+						</div>
+						<div class="d-flex align-items-center justify-content-start">
+							<img class="fifth__ul-ellipse" src="svg/ul-ellipse.svg" alt="">
+							<span class="fifth__ul-text">Spreads and commission-from 0 points</span>
+						</div>
+						<div class="d-flex align-items-center justify-content-start">
+							<img class="fifth__ul-ellipse" src="svg/ul-ellipse.svg" alt="">
+							<span class="fifth__ul-text">Shoulders up to X100</span>
+						</div>
+					</div>
+					<a href="https://app.uni-trade.pro">
+						<button class="first__button mt-3 hover-button">
+							Start trading
+						</button>
+					</a>
+					<div class="carousel-line-position">
+						<a href="#carouselExampleCaptions" class="me-3" role="button" data-bs-slide="prev">
+							<img src="svg/slide-line.svg"/>
+						</a>
+						<span>
+								03/03
+							</span>
+						<a href="#carouselExampleCaptions" class="ms-3" role="button" data-bs-slide="next">
+							<img src="svg/slide-line.svg"/>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--	</div>-->
+
+	<div class="container-fluid p-0 second__container" id="selling">
+		<div class="container">
+			<p class="second__header">
+				Place trading orders <br/>
+				on the best conditions
+			</p>
+			<div class="mt-5 container-fluid">
+				<div class="row d-flex align-items-center justify-content-center">
+					<div class="second__card col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mt-xxl-0 mt-xl-0 mt-lg-0 mt-md-4 mt-sm-2 mt-0">
+						<div>
+							<img src="svg/first.svg" alt="">
+						</div>
+						<p class="m-0">
+							Leverage up <br/>
+							to X100
+						</p>
+					</div>
+					<div class="second__card col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mt-xxl-0 mt-xl-0 mt-lg-0 mt-md-4 mt-sm-4 mt-4">
+						<div>
+							<img src="svg/second.svg" alt="">
+						</div>
+						<p class="m-0">
+							Low spreads <br/>
+							and commissions
+						</p>
+					</div>
+					<div class="second__card col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mt-xxl-0 mt-xl-0 mt-lg-0 mt-md-4 mt-sm-4 mt-4">
+						<div>
+							<img src="svg/third.svg" alt="">
+						</div>
+						<p class="m-0">
+							Fast deposit <br/>
+							and withdrawal of funds
+						</p>
+					</div>
+					<div class="second__card col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mt-xxl-5 mt-xl-5 mt-lg-5 mt-md-4 mt-sm-4 mt-4">
+						<div>
+							<img src="svg/fourth.svg" alt="">
+						</div>
+						<p class="m-0">
+							Up to 100% <br/>
+							deposit bonus
+						</p>
+					</div>
+					<div class="second__card col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mt-xxl-5 mt-xl-5 mt-lg-5 mt-md-4 mt-sm-4 mt-4">
+						<div>
+							<img src="svg/fifth.svg" alt="">
+						</div>
+						<p class="m-0">
+							Instant order <br/>
+							execution
+						</p>
+					</div>
+					<div class="second__card col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mt-xxl-5 mt-xl-5 mt-lg-5 mt-md-4 mt-sm-4 mt-4">
+						<div>
+							<img src="svg/sixth.svg" alt="">
+						</div>
+						<p class="m-0">
+							Support <br/>
+							24/7
+						</p>
+					</div>
+				</div>
+			</div>
+			<p class="second__header">
+				The numbers speak for themselves
+			</p>
+			<div class="container-fluid mt-5">
+				<div class="row mb-4">
+					<div class="second__number-card col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+						<p class="second__number-card-header m-0">
+							23 569
+						</p>
+						<p class="second__number-card-text">
+							open accounts
+						</p>
+					</div>
+					<div class="second__number-card col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+						<p class="second__number-card-header m-0">
+							2 234 563
+						</p>
+						<p class="second__number-card-text">
+							total orders
+						</p>
+					</div>
+					<div class="second__number-card col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+						<p class="second__number-card-header m-0">
+							94 352
+						</p>
+						<p class="second__number-card-text">
+							open orders
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="third__container container-fluid p-0" id="about">
+		<p class="third__container-header pt-5 pb-5">
+			Working with Uni-Trade is
+		</p>
+		<div class="container align-items-center d-flex flex-column justify-content-center" style="color: white">
+			<ul class="timeline">
+				<li>
+					<div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record" rel="tooltip"></i></a>
+					</div>
+					<div class="timeline-panel">
+						<div class="timeline-heading">
+							01
+						</div>
+						<div class="timeline-body">
+							<span class="p-0 timeline-panel-header">
+								Comprehensive training
+							</span>
+							<p class="p-0 timeline-panel-body">
+								Our "Training" section contains <br/>
+								tutorials, guides, and various <br/>
+								trading strategies
+							</p>
+						</div>
+					</div>
+				</li>
+
+				<li class="timeline-inverted">
+					<div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record" rel="tooltip"></i></a>
+					</div>
+					<div class="timeline-panel">
+						<div class="timeline-heading">
+							02
+						</div>
+						<div class="timeline-body">
+							<span class="p-0 timeline-panel-header">
+								The most liquid  <br/>
+								pairs to trade
+							</span>
+							<p class="p-0 timeline-panel-body">
+								First time with us ? Get up to 3 months of shopping holidays. <br/>
+								Feel free and don't think about commissions
+							</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record" rel="tooltip"></i></a>
+					</div>
+					<div class="timeline-panel">
+						<div class="timeline-heading">
+							03
+						</div>
+						<div class="timeline-body">
+							<span class="p-0 timeline-panel-header">
+								Support 24/5
+							</span>
+							<p class="p-0 timeline-panel-body">
+								Our support team will respond as <br/>
+								soon as possible and resolve <br/>
+								any issues
+							</p>
+						</div>
+					</div>
+				</li>
+
+				<li class="timeline-inverted">
+					<div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record" rel="tooltip"></i></a>
+					</div>
+					<div class="timeline-panel">
+						<div class="timeline-heading">
+							04
+						</div>
+						<div class="timeline-body">
+							<span class="p-0 timeline-panel-header">
+								Demo-account
+							</span>
+							<p class="p-0 timeline-panel-body">
+								Try all the advantages of the platform on <br/>
+								Demo account using virtual money. <br/>
+								No investment or risk involved.
+							</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record" rel="tooltip"></i></a>
+					</div>
+					<div class="timeline-panel">
+						<div class="timeline-heading">
+							05
+						</div>
+						<div class="timeline-body">
+							<span class="p-0 timeline-panel-header">
+								Top up and withdraw your balance instantly, <br/>
+								in cryptocurrency
+							</span>
+							<p class="p-0 timeline-panel-body">
+								Withdrawal and replenishment of funds is <br/>
+								completely free, in a fraction of seconds
+							</p>
+						</div>
+					</div>
+				</li>
+
+				<li class="timeline-inverted">
+					<div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record" rel="tooltip"></i></a>
+					</div>
+					<div class="timeline-panel">
+						<div class="timeline-heading">
+							06
+						</div>
+						<div class="timeline-body">
+							<span class="p-0 timeline-panel-header">
+								Indicators and signals
+							</span>
+							<p class="p-0 timeline-panel-body">
+								Everything you need to trade at the <br/>
+								highest level, including popular <br/>
+								indicators and signals
+							</p>
+						</div>
+					</div>
+				</li>
+				<li class="clearfix" style="float: none;"></li>
+			</ul>
+			<a href="https://app.uni-trade.pro">
+				<button class="third__button mb-5 hover-button">
+					Start trading
+				</button>
+			</a>
+		</div>
+	</div>
+
+	<div class="fourth__container container-fluid p-0">
+		<div class="container d-flex flex-column align-items-center justify-content-center">
+			<p class="fourth__container-header mt-5">Account types</p>
+			<div class="fourth__container-divider mt-3 mb-xxl-5 mb-xl-5 mb-lg-1 mb-md-1 mb-sm-1 mb-1"></div>
+			<div class="container-fluid d-flex flex-column justify-content-center">
+				<div class="row mt-xxl-5 mt-xl-5 mt-lg-0 mt-md-0 mt-sm-0 mt-0">
+					<div class="mt-5 col-xxl-4 col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
+						<div class="fourth__card">
+							<img src="svg/карт%202%201.svg" alt="" class="fourth__card-image">
+							<p class="fourth__card-header">
+								Pro-Standart
+							</p>
+							<div class="fourth__card-divider mb-4">
+
+							</div>
+							<span class="fourth__card-body fourth__card-body-width">
+								The most popular account type <br
+									class="d-xxl-block d-xl-block d-lg-none d-md-none d-sm-block d-block"/>
+								in Uni-Trade, suitable for both <br
+									class="d-xxl-block d-xl-block d-lg-none d-md-none d-sm-block d-block"/>
+								beginners and experienced <br
+									class="d-xxl-block d-xl-block d-lg-none d-md-none d-sm-block d-block"/>
+								traders.
+							</span>
+							<div class="container-fluid mt-5 p-md-0 p-xxl-3 p-xl-3 p-lg-3">
+								<div class="row text-xxl-start text-xl-start text-lg-start text-md-start text-sm-center text-center">
+									<div class="col-xxl-6 col-xl-6 col-lg-3 col-md-4 col-sm-12 col-12 fourth__card-first-column mb-3">
+										First deposit
+									</div>
+									<div class="col-xxl-6 col-xl-6 col-lg-9 col-md-8 col-sm-12 col-12 fourth__card-second-column mb-3">
+										50 USD / 50 EUR
+									</div>
+									<div class="col-xxl-6 col-xl-6 col-lg-3 col-md-4 col-sm-12 col-12 fourth__card-first-column mb-3">
+										Type of execution
+									</div>
+									<div class="col-xxl-6 col-xl-6 col-lg-9 col-md-8 col-sm-12 col-12 fourth__card-second-column mb-3">
+										Market Execution
+									</div>
+									<div class="col-xxl-6 col-xl-6 col-lg-3 col-md-4 col-sm-12 col-12 fourth__card-first-column mb-3">
+										Spread
+									</div>
+									<div class="col-xxl-6 col-xl-6 col-lg-9 col-md-8 col-sm-12 col-12 fourth__card-second-column mb-3">
+										Floating <br/>
+										from 1.5 points
+									</div>
+									<div class="col-xxl-6 col-xl-6 col-lg-3 col-md-4 col-sm-12 col-12 fourth__card-first-column mb-3">
+										Tools
+									</div>
+									<div class="col-xxl-6 col-xl-6 col-lg-9 col-md-8 col-sm-12 col-12 fourth__card-second-column mb-3">
+										The most liquid <br/>
+										pairs to trade
+									</div>
+									<div class="col-xxl-6 col-xl-6 col-lg-3 col-md-4 col-sm-12 col-12 fourth__card-first-column mb-3">
+										Bonuses
+									</div>
+									<div class="col-xxl-6 col-xl-6 col-lg-9 col-md-8 col-sm-12 col-12 fourth__card-second-column mb-3">
+										All offers
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="mt-5 col-xxl-4 col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
+						<div class="fourth__card">
+							<img src="svg/карт%203%201.svg" alt="" class="fourth__card-image">
+							<p class="fourth__card-header">
+								Demo
+							</p>
+							<div class="fourth__card-divider mb-4">
+
+							</div>
+							<span class="fourth__card-body fourth__card-body-width">
+						 		By opening a demo account in Unitrade, you <br
+									class="d-xxl-block d-xl-block d-lg-none d-md-none d-sm-block d-block"/>
+								will be able to test our  <br
+									class="d-xxl-block d-xl-block d-lg-none d-md-none d-sm-block d-block"/>
+								trading conditions - instruments,  <br
+									class="d-xxl-block d-xl-block d-lg-none d-md-none d-sm-block d-block"/>
+								spreads, swaps, execution speed  <br
+									class="d-xxl-block d-xl-block d-lg-none d-md-none d-sm-block d-block"/>
+								- without investing your own funds. <br
+									class="d-xxl-block d-xl-block d-lg-none d-md-none d-sm-block d-block"/>
+						</span>
+							<div class="container-fluid mt-5 p-md-0 p-xxl-3 p-xl-3 p-lg-3">
+								<div class="row text-xxl-start text-xl-start text-lg-start text-md-start text-sm-center text-center">
+									<div class="col-xxl-6 col-xl-6 col-lg-3 col-md-4 col-sm-12 col-12 fourth__card-first-column mb-3">
+										First deposit
+									</div>
+									<div class="col-xxl-6 col-xl-6 col-lg-9 col-md-8 col-sm-12 col-12 fourth__card-second-column mb-3">
+										Not required
+									</div>
+									<div class="col-xxl-6 col-xl-6 col-lg-3 col-md-4 col-sm-12 col-12 fourth__card-first-column mb-3">
+										Type of execution
+									</div>
+									<div class="col-xxl-6 col-xl-6 col-lg-9 col-md-8 col-sm-12 col-12 fourth__card-second-column mb-3">
+										Market Execution
+									</div>
+									<div class="col-xxl-6 col-xl-6 col-lg-3 col-md-4 col-sm-12 col-12 fourth__card-first-column mb-3">
+										Spread
+									</div>
+									<div class="col-xxl-6 col-xl-6 col-lg-9 col-md-8 col-sm-12 col-12 fourth__card-second-column mb-3">
+										Standard
+									</div>
+									<div class="col-xxl-6 col-xl-6 col-lg-3 col-md-4 col-sm-12 col-12 fourth__card-first-column mb-3">
+										Tools
+									</div>
+									<div class="col-xxl-6 col-xl-6 col-lg-9 col-md-8 col-sm-12 col-12 fourth__card-second-column mb-3">
+										The most liquid <br/>
+										pairs to trade
+									</div>
+									<div class="col-xxl-6 col-xl-6 col-lg-3 col-md-4 col-sm-12 col-12 fourth__card-first-column mb-3">
+										Bonuses
+									</div>
+									<div class="col-xxl-6 col-xl-6 col-lg-9 col-md-8 col-sm-12 col-12 fourth__card-second-column mb-3">
+										Missing
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="mt-5 col-xxl-4 col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
+						<div class="fourth__card">
+							<img src="svg/карт1%201.svg" alt="" class="fourth__card-image">
+							<p class="fourth__card-header">
+								Pro Trade
+							</p>
+							<div class="fourth__card-divider mb-4">
+
+							</div>
+							<span class="fourth__card-body fourth__card-body-width">
+								Pro accounts are designed for <br
+									class="d-xxl-block d-xl-block d-lg-none d-md-none d-sm-block d-block"/>
+								professionals who  <br
+									class="d-xxl-block d-xl-block d-lg-none d-md-none d-sm-block d-block"/>
+								need the best trading  <br
+									class="d-xxl-block d-xl-block d-lg-none d-md-none d-sm-block d-block"/>
+								conditions with narrow spreads <br
+									class="d-xxl-block d-xl-block d-lg-none d-md-none d-sm-block d-block"/>
+						</span>
+							<div class="container-fluid mt-5 p-md-0 p-xxl-3 p-xl-3 p-lg-3">
+								<div class="row text-xxl-start text-xl-start text-lg-start text-md-start text-sm-center text-center">
+									<div class="col-xxl-6 col-xl-6 col-lg-3 col-md-4 col-sm-12 col-12 fourth__card-first-column mb-3">
+										First deposit
+									</div>
+									<div class="col-xxl-6 col-xl-6 col-lg-9 col-md-8 col-sm-12 col-12 fourth__card-second-column mb-3">
+										1500 USD
+									</div>
+									<div class="col-xxl-6 col-xl-6 col-lg-3 col-md-4 col-sm-12 col-12 fourth__card-first-column mb-3">
+										Type of execution
+									</div>
+									<div class="col-xxl-6 col-xl-6 col-lg-9 col-md-8 col-sm-12 col-12 fourth__card-second-column mb-3">
+										Market Execution
+									</div>
+									<div class="col-xxl-6 col-xl-6 col-lg-3 col-md-4 col-sm-12 col-12 fourth__card-first-column mb-3">
+										Spread
+									</div>
+									<div class="col-xxl-6 col-xl-6 col-lg-9 col-md-8 col-sm-12 col-12 fourth__card-second-column mb-3">
+										Floating <br
+											class="d-xxl-block d-xl-block d-lg-none d-md-none d-sm-block d-block"/>
+										from 0 points
+									</div>
+									<div class="col-xxl-6 col-xl-6 col-lg-3 col-md-4 col-sm-12 col-12 fourth__card-first-column mb-3">
+										Tools
+									</div>
+									<div class="col-xxl-6 col-xl-6 col-lg-9 col-md-8 col-sm-12 col-12 fourth__card-second-column mb-3">
+										The most liquid <br/>
+										pairs to trade, Exotic <br/>
+										Cryptocurrency assets
+									</div>
+									<div class="col-xxl-6 col-xl-6 col-lg-3 col-md-4 col-sm-12 col-12 fourth__card-first-column mb-3">
+										Bonuses
+									</div>
+									<div class="col-xxl-6 col-xl-6 col-lg-9 col-md-8 col-sm-12 col-12 fourth__card-second-column mb-3">
+										All offers
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="d-flex align-items-center justify-content-center mb-5 flex-xxl-row flex-xl-row flex-lg-row flex-md-row flex-sm-column flex-column fourth__buttons-container">
+					<a href="https://app.uni-trade.pro">
+						<button class="hover-button fourth__button-start me-xxl-3 me-xl-3 me-lg-3 me-md-3 me-sm-0 me-0 mb-xxl-5 mb-xl-5 mb-lg-5 mb-md-5 mb-sm-4 mb-4">
+							Start trading
+						</button>
+					</a>
+					<a href="https://app.uni-trade.pro">
+						<button class="hover-button fourth__button-open mb-5">
+							Open a demo account
+						</button>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="fifth__container container-fluid p-0 ">
+		<div class="container mt-5 mb-5">
+			<div class="row mt-5">
+				<div class="col-xxl-5 col-xl-5 col-lg-5">
+					<p class="fifth__header text-xxl-start text-xl-start text-lg-start text-md-center text-center">
+						Trading Platform Uni-Trade
+					</p>
+
+					<p class="fifth__body mt-5">
+						For those traders who always prefer to be on the move, <br
+							class="d-xxl-block d-xl-block d-lg-none d-md-none d-sm-block d-block"/>
+						we present an exclusive trading platform for online <br
+							class="d-xxl-block d-xl-block d-lg-none d-md-none d-sm-block d-block"/>
+						trading both from a computer and adaptive <br
+							class="d-xxl-block d-xl-block d-lg-none d-md-none d-sm-block d-block"/>
+						for mobile devices.
+					</p>
+
+					<div class="mt-4">
+						<div class="d-flex align-items-center justify-content-start">
+							<img class="fifth__ul-ellipse" src="svg/ul-ellipse.svg" alt="">
+							<span class="fifth__ul-text">Control your positions and orders from anywhere in the world.</span>
+						</div>
+						<div class="d-flex align-items-center justify-content-start">
+							<img class="fifth__ul-ellipse" src="svg/ul-ellipse.svg" alt="">
+							<span class="fifth__ul-text">
+								Trade from any browser and from any <br/>
+								mobile device (iOS, Android).
+							</span>
+						</div>
+					</div>
+					<p class="fifth__body mt-4">
+						Uni-Trade is a web-based trading platform with the <br
+							class="d-xxl-block d-xl-block d-lg-none d-md-none d-sm-block d-block"/>
+						industry's fastest financial charts and advanced <br
+							class="d-xxl-block d-xl-block d-lg-none d-md-none d-sm-block d-block"/>
+						technical analysis tools.
+					</p>
+					<a href="https://app.uni-trade.pro">
+						<button class="hover-button fourth__button-start mt-4 d-xxl-block d-xl-block d-lg-none d-md-none d-sm-none d-none">
+							Start trading
+						</button>
+					</a>
+				</div>
+				<div class="col-xxl-7 col-xl-7 col-lg-6 d-flex align-items-center justify-content-center flex-column">
+					<img src="svg/fifth-right-col-bg.svg" class="w-100"/>
+					<a href="https://app.uni-trade.pro">
+						<button class="hover-button fourth__button-start mt-4 d-xxl-none d-xl-none d-lg-block d-md-block d-sm-block d-block">
+							Start trading
+						</button>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="sixth__wrapper container-fluid" id="for_clients">
+		<div class="container sixth__container d-flex flex-column align-items-center justify-content-center">
+			<p class="sixth__header mt-5">
+				Security of the client's funds
+			</p>
+			<div class="sixth__divider mt-3 mb-3">
+
+			</div>
+
+			<p class="sixth__text mt-3">
+				Your funds are fully protected when trading with Uni-Trade
+			</p>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 align-items-center justify-content-center d-flex flex-column text-white text-center">
+						<img src="svg/shield%20(1)%201.svg" alt="">
+						<span class="mt-2 mb-5">
+							Protection against negative <br/>
+							wallet balance
+						</span>
+					</div>
+					<div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 align-items-center justify-content-center d-flex flex-column text-white text-center">
+						<img src="svg/certificate%20(1)%202.svg" alt="">
+						<span class="mt-2 mb-5">
+							 Certificate of quality of execution of the <br/>
+							 ransaction from Verify MyTrade
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="seventh__container container-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12 mt-5">
+					<img src="svg/card-phone.svg" class="w-100" alt="">
+				</div>
+				<div class="col-xxl-7 col xl-7 col-lg-7 col-md-7 col-sm-12 col-12 mt-5">
+					<p class="seventh__header">Top up and withdraw your funds 24/5</p>
+					<p class="seventh__text mt-4 mb-4">
+						We provide fast processing of requests, information <br/>
+						on the execution of requests is available through your account.<br/>
+						The system for entering and withdrawing money works around the clock.
+					</p>
+				</div>
+			</div>
+			<div class="d-flex align-items-center justify-content-around mt-5 flex-wrap">
+				<img src="svg/visa_logo_c%201.svg" class="p-xxl-0 p-xl-0 p-lg-0 p-md-0 p-sm-1 p-1" alt="">
+				<img src="svg/mastercard_logo_c%201.svg" class="p-xxl-0 p-xl-0 p-lg-0 p-md-0 p-sm-1 p-1" alt="">
+				<img src="svg/webmoney_logo_c%201.svg" class="p-xxl-0 p-xl-0 p-lg-0 p-md-0 p-sm-1 p-1" alt="">
+				<img src="svg/yandex_logo_c%201.svg" class="p-xxl-0 p-xl-0 p-lg-0 p-md-0 p-sm-1 p-1" alt="">
+				<img src="svg/800px-Mir-logo.SVG%201.svg" class="p-xxl-0 p-xl-0 p-lg-0 p-md-0 p-sm-1 p-1" alt="">
+				<img src="svg/qiwi_logo_c%201.svg" class="p-xxl-0 p-xl-0 p-lg-0 p-md-0 p-sm-1 p-1" alt="">
+			</div>
+		</div>
+	</div>
+
+</main>
+
+<footer class="footer__container container-fluid">
+	<div class="container">
+		<div class="row d-xxl-flex d-xl-flex d-lg-none d-md-none d-sm-none d-none">
+			<div class="col-xxl-4 col-xl-4 col-lg-4 d-flex flex-column">
+				<img src="svg/white-logo.svg" alt="" class="me-auto">
+				<p class="footer__text mt-3">
+					UniTrade is registered on <br/>
+					Cyprus at: Spyrou Kyprianou Ave 89, <br/>
+					Limassol.
+				</p>
+				<p class="footer__text mt-2">
+					UniTrade is authorized to<br/>
+					operate and operate in <br/>
+					accordance with the requirements of the Cyprus <br/>
+					Securities and Exchange Commission <br/>
+					(license number 259/28)
+				</p>
+				<p class="footer__text mt-3">
+					Feedback: <a class="ms-3" href="mailto:support@uni-trade.pro">support@uni-trade.pro</a>
+				</p>
+
+				<p class="footer__text mt-4" style="opacity: 0.5">
+					Privacy Policy
+				</p>
+				<p class="footer__text mt-2" style="opacity: 0.5">
+					All rights reserved © 2020 Uni-Trade
+				</p>
+			</div>
+			<div class="col-xxl-8 col-xl-8 col-lg-8 d-flex flex-column">
+				<p class="footer__text">
+					Risk warning
+				</p>
+				<p class="footer__text mt-2">
+					Trading in financial markets involves risk. Crypto and other financial<br/>
+					contracts are complex financial instruments used for<br/>
+					margin trading. Trading has a high level of risk, as leverage <br/>
+					can work both in your favor and against you. As a result, trading is not suitable <br/>
+					for all investors due to the high risk of loss of invested capital. You should not<br/>
+					risk more money than you are willing to lose. Before you start trading, you <br/>
+					should make sure that you understand all the risks and take them into account in conjunction with
+					the level<br/>
+					Your experience in setting your investment goals.
+				</p>
+				<p class="footer__text mt-2">
+					All rights to copy the materials on this site are reserved and<br/>
+					belong to "Uno-Trade Company". Any use of the materials on this site must be <br/>
+					approved by an authorized representative of "UniTrade", and contain a link to<br/>
+					this resource. Any third-party Companies belonging to the category of "Online broker" <br/>
+					or "Online trading", have no right to use materials of this website and <br/>
+					any, including distorted writing of "UniTrade", and in case of violation shall be <br/>
+					prosecuted in accordance with the norms of legislative acts on the protection of <br/>
+					intellectual property.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid d-xxl-none d-xl-none d-lg-flex d-md-flex d-sm-flex">
+		<div class="row ">
+			<div class="col-12 d-flex align-items-center justify-content-center  flex-column">
+				<img src="svg/white-logo.svg" alt="" class="me-auto ms-auto footer__mob-logo">
+				<span class="footer__text mt-4 mb-4">
+					Risk warning
+				</span>
+				<p class="footer__text">
+					Trading in financial markets involves risk. Crypto and other financial<br/>
+					contracts are complex financial instruments used for<br/>
+					margin trading. Trading has a high level of risk, as leverage <br/>
+					can work both in your favor and against you. As a result, trading is not suitable <br/>
+					for all investors due to the high risk of loss of invested capital. You should not<br/>
+					risk more money than you are willing to lose. Before you start trading, you <br/>
+					should make sure that you understand all the risks and take them into account in conjunction with
+					the level<br/>
+					Your experience in setting your investment goals.
+				</p>
+				<p class="footer__text">
+					Все права на копирование материалов данного сайта защищены и принадлежат "Uni-Trade". Любое
+					использование материалов данного сайта должно быть согласовано с уполномоченным представителем
+					"Uni-Trade", и содержать ссылку на настоящий ресурс. Любые сторонние Компании, относящиеся к
+					категориям "Online broker" или "Online trading", не имеют права использовать как материалы данного
+					сайта, так и любые, в том числе и искаженные написания "Uni-Trade", и в случае нарушения подлежат
+					преследованию в соответствии с нормами законодательных актов о защите интеллектуальной
+					собственности.
+				</p>
+				<p class="footer__text">
+					UniTrade is registered on
+					Cyprus at: Spyrou Kyprianou Ave 89,
+					Limassol.
+				</p>
+				<p class="footer__text">
+					UniTrade is authorized to
+					operate and operate in
+					accordance with the requirements of the Cyprus
+					Securities and Exchange Commission
+					(license number 259/28)
+				</p>
+
+				<p class="footer__text footer_text_center">
+					Feedback: <br class="d-xxl-none d-xl-none d-lg-none d-md-none d-sm-block d-block"/>
+					<a class="ms-3">support@uni-trade.pro</a>
+				</p>
+				<a href="/">
+					<p class="footer__text footer_grey footer_text_center">
+						Privacy Policy
+					</p>
+				</a>
+				<p class="footer__text footer_grey footer_text_center">
+					All rights reserved © <br class="d-xxl-none d-xl-none d-lg-none d-md-none d-sm-block d-block"/> 2020
+					Uni-Trade
+				</p>
+			</div>
+
+		</div>
+	</div>
+</footer>
+
+
+<script src="js/bootstrap.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
